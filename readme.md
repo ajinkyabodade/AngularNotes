@@ -104,11 +104,17 @@ Interpolation allows you to incorporate calculated strings into the text between
 The interpolation live example / download example demonstrates all of the syntax and code snippets described in this section.
 ```
 Welcome {{name}}            //Where name is variable name in component 
+
 {{2+2}}			       //Possible And gives answer as 4
+
 {{"Welcome " + name}}        //tring Concatination
+
 {{name.length})              //Basic attribute
+
 {{name.toUpperCase()}}       // Basic funtions/filters
+
 {{greetUser()}}              //Calling function present in Component
+
 {{windown.href.loaction()}}   //Not allowed
 
 ```
