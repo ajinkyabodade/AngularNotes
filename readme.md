@@ -7,6 +7,7 @@ Angular presents you not only the tools but also the design patterns to build yo
 Angular is JavaScript framework that allow to create modern Single page application. 
 
 <h2>Lets get started by installing the following:</h2>
+
 -Node
 
 -npm [Node Package Manager]
@@ -17,7 +18,10 @@ Angular is JavaScript framework that allow to create modern Single page applicat
 
 <h2>Create and Run new App</h2>
 To create new app (boiler plate), go to terminal and reach your desired folder and enter the following command. 
-```ng new <Enter your app name>```
+
+```
+ng new <Enter your app name>
+```
 The ng new command prompts you for information about features to include in the initial app project. Accept the defaults by pressing the Enter or Return key.
 
 Now to make it run enter the following command
@@ -54,6 +58,7 @@ To make changes to the app, we will work on src/app  folder mostly.
 
 <h2> Change Title Name</h2>
 Lets change the title of the app first. Go to component class code app.component.ts  and change the title
+
 ```
 export class AppComponent {
  title = 'Dribbler';
@@ -61,6 +66,7 @@ export class AppComponent {
 ```
 
 To see the changes write the following code in app.component.html
+
 ```
 <div style="text-align:center">
  <h1>
@@ -72,8 +78,16 @@ Note {{title}}   with a {{..}} notation, is used to data bind title defined in A
 
 <h2> Create and Run New Component</h2>
 Type the below code in terminal (at your application folder)
-```ng generate component component_name```
-Ex:```ng generate component players```
+
+```
+ng generate component component_name
+```
+
+Ex:
+
+```
+ng generate component players
+```
 
 The CLI creates a new folder, src/app/players and generates the three files of the players.
 The  PlayersComponent class (players.component.ts) code looks like below:
@@ -147,13 +161,19 @@ value.Note that there is important difference between property and attribute:
 — -Attribute value does not change: Change value of input element into 10.
 
 Run getAttribute('value') for our input element.Result will be 5.
-— -Properties does change.Change value of input element into 10.Run getElementByTagName('input').value for our input element.Result will be 10.
+
+— -Properties does change. Change value of input element into 10. 
+
+Run getElementByTagName('input').value
+
+ for our input element.Result will be 10.
 
 For a given DOM node object, properties are the properties of that object, and attributes are the elements of the attributes property of that object.
 
 There are several methods to bind data in Angular:
 
 Interpolation: Lets assume we have created “imagePath” variable in our class. 
+
 We can bind this value to src property of img element:
 ```
 <img src=”{{imagePath}}”>
@@ -164,13 +184,15 @@ If we want to add some action and do something like:
 <img src=”image.google.com/{{imagePath}}”>
 ```
 
- It still will work with interpolation
+It still will work with interpolation
+
 Property Binding: Lets assume we want assign if button is disabled or not and we have got isDisabled variable in our class:
 ```
 <button [disabled]=’isDisabled’>Click</button>
 ```
 
 If we want to assign non string value to the property we need to use property binding.
+
 Attribute Binding:Normally Angular recommends to use property binding but if there is not any corresponding property to attribute (for example ‘colspan’).
 
 Lets assume we have got colSpan variable in our class:
