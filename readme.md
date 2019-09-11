@@ -12,7 +12,7 @@ Angular is JavaScript framework that allow to create modern Single page applicat
 -Angular CLI
 -IDE
 
-<h1>Create and Run new App</h1>
+<h2>Create and Run new App</h2>
 To create new app (boiler plate), go to terminal and reach your desired folder and enter the following command. 
 ```ng new <Enter your app name>```
 The ng new command prompts you for information about features to include in the initial app project. Accept the defaults by pressing the Enter or Return key.
@@ -90,9 +90,11 @@ The  PlayersComponent @Component contains three meta data as follows:
 
 Now that, htmlInput component is created, how to link this component in the root component ?
 Insert this component using selector html-input  inside AppComponent template (app.component.html)
+
 ```
 <html-input></html-input>
 ```
+
 Also Import htmlInput Component in app.module.ts
 
 
