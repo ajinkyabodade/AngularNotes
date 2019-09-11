@@ -69,7 +69,9 @@ Ex:```ng generate component players```
 
 The CLI creates a new folder, src/app/players and generates the three files of the players.
 The  PlayersComponent class (players.component.ts) code looks like below:
-﻿```
+
+```
+﻿
 import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'html-input',
@@ -82,6 +84,7 @@ export class htmlInputComponent implements OnInit {
  }
 }
 ```
+
 The  PlayersComponent @Component contains three meta data as follows:
 
 1.selector— the component's CSS element selector
@@ -102,6 +105,7 @@ Also Import htmlInput Component in app.module.ts
 Interpolation allows you to incorporate calculated strings into the text between HTML element tags and within attribute assignments. Template expressions are what you use to calculate those strings.
 
 The interpolation live example / download example demonstrates all of the syntax and code snippets described in this section.
+
 ```
 Welcome {{name}}            //Where name is variable name in component 
 
@@ -116,15 +120,17 @@ Welcome {{name}}            //Where name is variable name in component
 {{greetUser()}}              //Calling function present in Component
 
 {{windown.href.loaction()}}   //Not allowed
-
 ```
+
 
 <h2> Interpolation vs Property Binding </h2>
 
 DOM is basically collection of objects (window,html,body, head and etc) which allows us to manipulate it. It means that HTML elements are contained in the DOM as objects.HTML elements have attributes which initilizes DOM properties.Once initilization process is done attributes job is done.
+
 ```
 <input type=”text” value="5">
 ```
+
 Given input element has type and value attributes.When HTML element is created its properties which have similar names to attributes (but not same thing) is created, too.After initilization given input element have properties such as type and 
 value.Note that there is important difference between property and attribute:
 
@@ -141,15 +147,18 @@ We can bind this value to src property of img element:
 ```
 <img src=”{{imagePath}}”>
 ```
+
 If we want to add some action and do something like:
 ```
 <img src=”image.google.com/{{imagePath}}”>
 ```
+
  It still will work with interpolation
 Property Binding: Lets assume we want assign if button is disabled or not and we have got isDisabled variable in our class:
 ```
 <button [disabled]=’isDisabled’>Click</button>
 ```
+
 If we want to assign non string value to the property we need to use property binding.
 Attribute Binding:Normally Angular recommends to use property binding but if there is not any corresponding property to attribute (for example ‘colspan’).
 Lets assume we have got colSpan variable in our class:
@@ -157,10 +166,12 @@ Lets assume we have got colSpan variable in our class:
 <th colspan=’{{colSpan}}’> — ->Result will be error.To bind attribute
 <th attr.colspan=’{{colSpan}}’> OR → <th [attr.colspan]=’colSpan’>No Error
 ```
+
 Two Way Data Binding: Lets assume we have got name=’Vader’ in our class.== 
 ```
 <input [value]=”name” (input)=’name=$event.target.value’>.
 ```
+
 By this method we can create two way data binding or else we can use input [(ngModel)]=’name’>
 (Source):(https://bit.ly/2kqMiL0)
 
