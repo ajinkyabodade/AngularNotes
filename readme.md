@@ -1,4 +1,4 @@
-# Angular Notes By Ajinkya
+<h1>Angular Notes By Ajinkya</h1>
 
 If you are a new web developer, then remember web development is not a one-day/one framework thing. It’s a field that you learn gradually like art (painting, singing) and things also change rapidly as well. 
 
@@ -6,13 +6,13 @@ Angular presents you not only the tools but also the design patterns to build yo
 
 Angular is JavaScript framework that allow to create modern Single page application. 
 
-## Lets get started by installing the following:
+<h2>Lets get started by installing the following:</h2>
 -Node
 -npm [Node Package Manager]
 -Angular CLI
 -IDE
 
-## Create and Run new App
+<h1>Create and Run new App</h1>
 To create new app (boiler plate), go to terminal and reach your desired folder and enter the following command. 
 ```ng new <Enter your app name>```
 The ng new command prompts you for information about features to include in the initial app project. Accept the defaults by pressing the Enter or Return key.
@@ -24,7 +24,7 @@ cd dribbler
 ```
  This command will start the app and open in the output in a browser.  Short notation for --open is -o
 
-##Getting Started
+<h2> Getting Started</h2>
 To make changes to the app, we will work on src/app  folder mostly.
 
  It contains 2 types of files
@@ -44,7 +44,7 @@ To make changes to the app, we will work on src/app  folder mostly.
 
  Initially it contains only declaration for AppComponent and later more components will be added.
 
-##Change Title Name
+<h2> Change Title Name</h2>
 Lets change the title of the app first. Go to component class code app.component.ts  and change the title
 ```
 export class AppComponent {
@@ -62,7 +62,7 @@ To see the changes write the following code in app.component.html
 ```
 Note {{title}}   with a {{..}} notation, is used to data bind title defined in AppComponent class(app.component.ts)
 
-##Create and Run New Component
+<h2> Create and Run New Component</h2>
 Type the below code in terminal (at your application folder)
 ```ng generate component component_name```
 Ex:```ng generate component players```
@@ -96,22 +96,22 @@ Insert this component using selector html-input  inside AppComponent template (a
 Also Import htmlInput Component in app.module.ts
 
 
-## Interpolation / Binding
+<h2> Interpolation / Binding</h2>
 Interpolation allows you to incorporate calculated strings into the text between HTML element tags and within attribute assignments. Template expressions are what you use to calculate those strings.
 
 The interpolation live example / download example demonstrates all of the syntax and code snippets described in this section.
 ```
-<h2> Welcome {{name}} </h2>            //Where name is variable name in component 
-<h2>{{2+2}}</h2>				       //Possible And gives answer as 4
-<h2>{{"Welcome " + name}}</h2>         //tring Concatination
-<h2>{{name.length})</h2>               //Basic attribute
-<h2>{{name.toUpperCase()}}</h2>        // Basic funtions/filters
-<h2>{{greetUser()}}</h2>               //Calling function present in Component
-<h2>{{windown.href.loaction()}}</h2>   //Not allowed
+Welcome {{name}}            //Where name is variable name in component 
+{{2+2}}			       //Possible And gives answer as 4
+{{"Welcome " + name}}        //tring Concatination
+{{name.length})              //Basic attribute
+{{name.toUpperCase()}}       // Basic funtions/filters
+{{greetUser()}}              //Calling function present in Component
+{{windown.href.loaction()}}   //Not allowed
 
 ```
 
-## Interpolation vs Property Binding 
+<h2> Interpolation vs Property Binding </h2>
 
 DOM is basically collection of objects (window,html,body, head and etc) which allows us to manipulate it. It means that HTML elements are contained in the DOM as objects.HTML elements have attributes which initilizes DOM properties.Once initilization process is done attributes job is done.
 ```
@@ -158,14 +158,7 @@ By this method we can create two way data binding or else we can use input [(ngM
 
  
 
-
-
-
-
-
-
-
-## Links To My profiles:
+<h2> Links To My profiles:</h2>
 
 * [Linkedin](https://www.linkedin.com/in/ajinkya-bodade/)
 * [Portfolio](https://ajinkyabodade.com/)
